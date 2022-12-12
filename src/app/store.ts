@@ -1,17 +1,23 @@
-import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import {
+  legacy_createStore as createStore,
+  combineReducers,
+  applyMiddleware,
+} from "redux";
+import thunk, { ThunkDispatch } from "redux-thunk";
+import reduceCreateUser from "./reducers/registration/reducer";
+import reduceDeleteUser from "./reducers/dashboard/reducer";
+import reduceEditUser from "./reducers/editProfile/reducer";
+import reduceListUser from "./reducers/listUsers/reducer";
 
-export const store = configureStore({
-  reducer: {
-    counter: counterReducer,
-  },
+const reducers = combineReducers({
+  listUsers: reduceListUser,
+  createUser: reduceCreateUser,
+  deleteUser: reduceDeleteUser,
+  editUser: reduceEditUser,
 });
 
-export type AppDispatch = typeof store.dispatch;
-export type RootState = ReturnType<typeof store.getState>;
-export type AppThunk<ReturnType = void> = ThunkAction<
-  ReturnType,
-  RootState,
-  unknown,
-  Action<string>
->;
+const store = createStore(reducers, applyMiddleware(thunk));
+
+export default store;
+
+export type AppDispatch = ThunkDispatch<{}, {}, any>;

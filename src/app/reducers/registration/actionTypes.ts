@@ -1,0 +1,1 @@
+export const SUCCESS_CREATE = "@USERS:SUCCESS_CREATE";

@@ -1,0 +1,1 @@
+export const SUCCESS_EDIT = "@USERS:SUCCESS_EDIT";
