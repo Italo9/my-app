@@ -57,4 +57,13 @@ Para iniciá-lo, siga os passos abaixo:
 
 O app estará disponível no seu browser pelo endereço http://localhost:3000.
 
+## Objetivos
+
+- Realizar pesquisas imersivas nas documentações das skills requeridas e supracitadas com objetivo de resolver as adversidades encontradas no desenvolvimento;
+- Aplicar e praticar a habilidade de análise e/ou leitura de código;
+- Aplicar os conhecimentos do requisições a API's;
+- Realizar a estruturação de arquivos;
+- Exercitar os conhecimentos iniciais obtidos na Trybe no módulo de Front End no que se refere ao framework React, bem como a linguagem de programação Typescript, apresentada no módulo de Back End; 
+- Treinar a interpretação e utilização de stacks derivadas da modelagem de projetos de terceiros e consecutivamente a conceituação de suas sintaxes;
+
 Lembrando que será necessário inserir os endpoints da sua API no arquivo `.env.local.example` e renomear este arquivo para `.env.local` para que a aplicação funcione corretamente.
