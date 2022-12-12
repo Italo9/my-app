@@ -1,11 +1,11 @@
 # Teste prático - Front End
 
 
-O projeto consiste em uma aplicação `fullstack` para desenvolver uma aplicação CRUD de Usuários em React utilizando a API [FakestoreApi](https://fakestoreapi.com/docs).
+O projeto consiste em uma aplicação `frontend` para desenvolver uma aplicação CRUD de Usuários em React utilizando a API [FakestoreApi](https://fakestoreapi.com/docs).
 
 A telas permitem ao usuário realizar o seu cadastro através de um __formulário__, editar, deletar e até mesmo listar. 
 
-Para esta parte do projeto, foi utilizado a prática de alguns dos princípios de Programação Orientada a Objetos (POO) durante o desenvolvimento.
+Para esta parte do projeto, foi utilizado a prática de alguns princípios do paradigma da Programação Orientada a Objetos (POO) durante todo o seu desenvolvimento.
 
 ## Tecnologias
 
@@ -61,9 +61,9 @@ O app estará disponível no seu browser pelo endereço http://localhost:3000.
 
 - Realizar pesquisas imersivas nas documentações das skills requeridas e supracitadas com objetivo de resolver as adversidades encontradas no desenvolvimento;
 - Aplicar e praticar a habilidade de análise e/ou leitura de código;
-- Aplicar os conhecimentos do requisições a API's;
+- Aplicar os conhecimentos de requisições a API's;
 - Realizar a estruturação de arquivos;
 - Exercitar os conhecimentos iniciais obtidos na Trybe no módulo de Front End no que se refere ao framework React, bem como a linguagem de programação Typescript, apresentada no módulo de Back End; 
-- Treinar a interpretação e utilização de stacks derivadas da modelagem de projetos de terceiros e consecutivamente a conceituação de suas sintaxes;
+- Treinar a interpretação e utilização de stacks derivadas da modelagem de projetos de terceiros e consecutivamente a conceituação de suas sintaxes.
 
 Lembrando que será necessário inserir os endpoints da sua API no arquivo `.env.local.example` e renomear este arquivo para `.env.local` para que a aplicação funcione corretamente.
