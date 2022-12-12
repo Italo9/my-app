@@ -1,46 +1,60 @@
-# Getting Started with Create React App
+# Teste prático - Front End
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) TS template.
 
-## Available Scripts
+O projeto consiste em uma aplicação `fullstack` para desenvolver uma aplicação CRUD de Usuários em React utilizando a API [FakestoreApi](https://fakestoreapi.com/docs).
 
-In the project directory, you can run:
+A telas permitem ao usuário realizar o seu cadastro através de um __formulário__, editar, deletar e até mesmo listar. 
 
-### `npm start`
+Para esta parte do projeto, foi utilizado a prática de alguns dos princípios de Programação Orientada a Objetos (POO) durante o desenvolvimento.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Tecnologias
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- [React.js](https://pt-br.reactjs.org/)
 
-### `npm test`
+- [TypeScript](https://www.typescriptlang.org/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [Docker](https://www.docker.com/)
 
-### `npm run build`
+- [React Hot Toast](https://react-hot-toast.com/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- [ESlint](https://eslint.org/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Como executar
 
-### `npm run eject`
+Clone o projeto e acesse a pasta do mesmo.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+$ git clone https://github.com/Italo9/my-app.git
+$ cd my-app
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Para iniciá-lo, siga os passos abaixo:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+<details>
+  <summary><strong>Com Docker</strong></summary>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+  ```bash
+  # Criar imagem
+  $ docker image build -t my-app ./
 
-## Learn More
+  # Criar container
+  $ docker container run -dit --name my-app -p 3000:3000 my-app
+  ```
+</details>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<details>
+  <summary><strong>Sem Docker</strong></summary>
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  ```bash
+  # Instalar as dependências
+  $ npm install
+
+  # Iniciar o projeto
+  $ npm start
+  ```
+</details>
+
+O app estará disponível no seu browser pelo endereço http://localhost:3000.
+
+Lembrando que será necessário inserir os endpoints da sua API no arquivo `.env.local.example` e renomear este arquivo para `.env.local` para que a aplicação funcione corretamente.
